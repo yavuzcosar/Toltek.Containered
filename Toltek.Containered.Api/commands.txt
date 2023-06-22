@@ -1,0 +1,8 @@
+﻿
+dotnet publish --os linux --arch x64 -c Release /t:PublishContainer
+dotnet publish --os linux --arch x64 -c Release /t:PublishContainer -p:ContainerRegistry
+docker push toltekdev/toltek.containered.api:0.0.5
+docker push toltekdev/toltek.containered.api:latest
+
+
+docker run -d -p 7991:80 --name ToltekContaineredApi docker.io/toltekdev/toltek.containered.api:0.0.4

@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<Version>0.0.2</Version> 
+		<PackageFolder>C:\Toltek\TLibrary\v2\</PackageFolder>
+	</PropertyGroup>
+	<Import Project="../.target/target-common.targets"/>
+	<Import Project="../.target/target-microsoft.targets"/>
+	<Import Project="../.target/target-packages.targets"/>
+	<Import Project="../.target/toltek-framework.targets"/>
+	<Import Project="../.target/toltek-platform.targets"/>
+	<Import Project="../.target/toltek-containered.targets"/>
+	<Import Project="../.target/target-actions.targets"/>
+</Project>
